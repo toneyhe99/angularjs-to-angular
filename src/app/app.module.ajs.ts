@@ -1,22 +1,23 @@
 import * as angular from 'angular';
 import 'angular-animate';
+import 'angular-resource';
+import 'angular-sanitize';
+import 'angular-bootstrap';
+import 'angular-ui-date';
+import 'angular-cookies';
+import 'angular-touch';
+import 'bootstrap';
+import 'strformat';
 import 'angular-route';
+// import 'font-awesome';
+import 'moment';
+import 'ajv';
 
-import './core/phone/phone.module';
-import './core/phone/phone.service';
-import './core/core.module';
+import './appjs/scripts/app.js';
+import './appjs/scripts/core/components/routeUnavailable.js';
 
-import './phone-detail/phone-detail.module';
-import './phone-detail/phone-detail.component';
-
-import './phone-list/phone-list.module';
-import './phone-list/phone-list.component';
-
-// Define the `phonecatApp` module
-export default angular.module('phonecatApp', [
-  'ngAnimate',
+// Define the `acornJsApp` module
+export default angular.module('acornJsApp', [
   'ngRoute',
-  'core',
-  'phoneDetail',
-  'phoneList'
+  'acornApp'
 ]);

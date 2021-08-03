@@ -3,12 +3,9 @@ export default function(appModule) {
   // @ts-ignore
   appModule.config(function ($routeProvider) {
     $routeProvider.
-    when('/phones', {
-      template: '<phone-list></phone-list>'
+    when('/', {
+      template: '<route-unavailable></route-unavailable>'
     }).
-    when('/phones/:phoneId', {
-      template: '<phone-detail></phone-detail>'
-    }).
-    otherwise('/phones');
+    otherwise('<route-unavailable></route-unavailable>');
   });
 }
